@@ -1,0 +1,36 @@
+:root {
+  --color: #eee;
+  --bg-color: #222;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+
+  background-color: var(--bg-color);
+  color: var(--color);
+  
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+
+.container {
+  min-height: 90vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 15vw;
+}
+
+span {
+  display: inline-block;
+  text-shadow: 50px 50px 0px #0003;
+
+  /* transform: skewX(7deg); */
+}
