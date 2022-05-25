@@ -16,15 +16,21 @@ html {
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
 }
 
+/* html::-webkit-scrollbar{
+  display: none;
+} */
+
 .container {
-  min-height: 90vh;
+  min-height: 400vh;
 
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 h1 {
+  position: fixed;
+  top: 15%;
   font-size: 15vw;
 }
 
