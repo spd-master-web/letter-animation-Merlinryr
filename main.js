@@ -38,7 +38,7 @@ window.addEventListener('scroll', element => {
   scrollPos.y = Math.round((window.scrollY / sizes.height) + 1)
   console.log(scrollPos.y)
 
-  bounceLetter()
+  scrollFX()
 })
 
 
@@ -47,18 +47,22 @@ window.addEventListener('scroll', element => {
 
 
 const mouseFX = () => {
+  const color = '#0003'
+  console.log((mouse.x * 10)+'px ' + (mouse.y * 10)+'px ' + '5px ' + color)
+
   gsap.to(title, {
     duration: 1,
     x: mouse.x * 100,
-    y: - mouse.y * 100
-  });
+    y: - mouse.y * 100,
+    textShadow: -(mouse.x * 200)+'px ' + (mouse.y * 200)+'px ' + (mouse.x * mouse.y + 10) + 'px ' + color
+  })
 }
 
 
 const scrollFX = () => {
   for(let i = 0; i < letterArray.length; i++){
     gsap.to(letterArray[i], {
-      duration: .3,
+      duration: 1,
       rotation: scrollPos.y * 180
     });
   }

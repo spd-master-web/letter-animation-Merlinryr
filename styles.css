@@ -32,11 +32,11 @@ h1 {
   position: fixed;
   top: 15%;
   font-size: 15vw;
+  text-shadow: 50px 50px 0px #0003;
 }
 
 span {
   display: inline-block;
-  text-shadow: 50px 50px 0px #0003;
 
   /* transform: skewX(7deg); */
 }
